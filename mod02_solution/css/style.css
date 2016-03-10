@@ -1,35 +1,35 @@
-@charset "UTF-8";
-/* Base Styles */
-
 * {
 	box-sizing: border-box;
-	font-family: Verdana;
 }
-
-p {
-	font-size: 0.75em;
-	padding: 30px 10px 0px 10px; 
-}
-
+body {
+	margin: 0;
+	font-family: Verdana;}
 h1 {
 	text-align: center;
 }
+p {padding: 10px;}
 
 /** Simple Responsive Framework **/
 
 .row {
 	width: 100%;
-	margin: 5px;
+	padding: 20px;
+	margin: 0;
 }
+.section {
+	font-size: 0.75em;
+	padding: 30px 0px 10px 10px;
+	border: 1px solid black;
+	background-color: #999;
+	width: 95%;
 
+}
 /*** Layout for Desktop ***/
 
 @media (min-width: 992px) {
   .col-desktop {
     width: 33%;
 	float: left;
-    border: 1px solid black;
-	background-color: #999;
   }
 }
 /********** Layout for Tablet **********/
@@ -38,8 +38,7 @@ h1 {
   .col-tablet {
     width: 50%;
 	float: left;
-    border: 1px solid black;
-	background-color: #999;
+	margin-top: 10px;
   }
 }
 /********** Layout for Mobile **********/
@@ -47,9 +46,7 @@ h1 {
 
 .col-mobile {
 	width: 100%;
-	float: left;
-    border: 1px solid black;
-	background-color: #999;
+	margin: 5%;
 }
 }
 /********** Other Styles **********/
@@ -58,12 +55,11 @@ h1 {
 	font-size: 1.25em;
 	border: 1px solid black;
 	float: right;
-	margin: 0px;
+	margin: 0 5% 0 0;	
 	padding: 3px 30px 3px 30px;
 }
 .chicken {
 	background-color: #DD9798;
-	
 }
 .beef {
 	background-color: #CD3E44;
